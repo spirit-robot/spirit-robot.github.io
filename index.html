@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit Robot - Intelligent Robotics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Spirit Robot</a>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav-home">HOME</a></li>
+                <li><a href="#video-section" data-i18n="nav-features">FEATURES</a></li>
+                <li><a href="#technology" data-i18n="nav-activities">ACTIVITIES</a></li>
+                <li><a href="#contact" data-i18n="nav-team">TEAM</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 data-i18n="hero-title">Redefining<br>Intelligent Robotics</h1>
+            <p class="subtitle" data-i18n="hero-subtitle">Breaking traditional boundaries, opening a new era of intelligence</p>
+            <a href="#video-section" class="cta-button" data-i18n="cta-button">Explore More</a>
+        </div>
+        <div class="scroll-indicator" data-i18n="scroll-indicator">
+            Scroll down for more ↓
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video-section">
+        <!-- 上方文字内容区域 -->
+        <div class="video-text-container">
+            <div class="video-text-content active" data-video="video1">
+                <div class="text-content">
+                    <span class="video-number">01</span>
+                    <h2 data-i18n="video1-title">Precision Control</h2>
+                    <p data-i18n="video1-desc">Advanced motion control algorithms enable millimeter-level precision, ensuring every movement is flawless.</p>
+                </div>
+            </div>
+            
+            <div class="video-text-content" data-video="video2">
+                <div class="text-content">
+                    <span class="video-number">02</span>
+                    <h2 data-i18n="video2-title">Intelligent Perception</h2>
+                    <p data-i18n="video2-desc">Integrated multi-sensor fusion technology provides 360-degree environmental awareness and intelligent adaptation to complex scenarios.</p>
+                </div>
+            </div>
+            
+            <div class="video-text-content" data-video="video3">
+                <div class="text-content">
+                    <span class="video-number">03</span>
+                    <h2 data-i18n="video3-title">Autonomous Learning</h2>
+                    <p data-i18n="video3-desc">Deep learning-based adaptive system continuously learns and optimizes, becoming smarter with increased usage time.</p>
+                </div>
+            </div>
+            
+            <div class="video-text-content" data-video="video4">
+                <div class="text-content">
+                    <span class="video-number">04</span>
+                    <h2 data-i18n="video4-title">Future Technology</h2>
+                    <p data-i18n="video4-desc">Integrating the latest AI and robotics technology to deliver unprecedented intelligent experiences and infinite possibilities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 下方视频区域 -->
+        <div class="video-container">
+            <!-- Video Content 1 -->
+            <div class="video-content active" id="video1">
+                <div class="video-wrapper">
+                    <video muted loop>
+                        <source src="assets/robot-video-1.mp4" type="video/mp4">
+                        <!-- Placeholder background if video file is missing -->
+                    </video>
+                </div>
+            </div>
+
+            <!-- Video Content 2 -->
+            <div class="video-content" id="video2">
+                <div class="video-wrapper">
+                    <video muted loop>
+                        <source src="assets/robot-video-2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Video Content 3 -->
+            <div class="video-content" id="video3">
+                <div class="video-wrapper">
+                    <video muted loop>
+                        <source src="assets/robot-video-3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Video Content 4 -->
+            <div class="video-content" id="video4">
+                <div class="video-wrapper">
+                    <video muted loop>
+                        <source src="assets/robot-video-4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trigger Scroll Area -->
+        <div class="trigger-section"></div>
+    </section>
+
+
+    <!-- Activities Section -->
+    <section class="activities" id="technology">
+        <div class="activities-container">
+            <h2 class="activities-title" data-i18n="activities-title">Recent Progress</h2>
+            <p class="activities-subtitle" data-i18n="activities-subtitle">Key milestones and achievements in our robotics development journey</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date-text" data-i18n="activity1-date">June 20, 2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">🔧</div>
+                        <h3 data-i18n="activity1-title">Initial Hardware Assembly Completed</h3>
+                        <p data-i18n="activity1-desc">Successfully completed the first version of hardware setup, including mechanical structure and basic electronic components integration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队区域 -->
+    <section class="team" id="contact">
+        <div class="team-container">
+            <div class="team-header">
+                <div class="team-logo">
+                    <div class="logo-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                    <div class="logo-text">Spirit Robot</div>
+                </div>
+                <h2 class="team-title" data-i18n="team-title">Team</h2>
+                <p class="team-subtitle" data-i18n="team-subtitle">Our professional team is dedicated to creating the most advanced intelligent robot technology</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <img src="assets/chengsi.jpg" alt="Chengsi Yao" class="avatar-image">
+                        </div>
+                    </div>
+                    <h3 class="member-name" data-i18n="member1-name">姚成思</h3>
+                    <p class="member-role" data-i18n="member1-role">Technical Lead</p>
+                    <p class="member-description" data-i18n="member1-desc">Focus on the development of robot core algorithms, with rich experience in artificial intelligence and machine learning.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <img src="assets/yongzhi.jpg" alt="Yongzhi Ma" class="avatar-image">
+                        </div>
+                    </div>
+                    <h3 class="member-name" data-i18n="member2-name">马勇枝</h3>
+                    <p class="member-role" data-i18n="member2-role">Hardware Engineer</p>
+                    <p class="member-description" data-i18n="member2-desc">Responsible for robot hardware design and optimization, ensuring the stability and reliability of the system.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <img src="assets/qiuting.jpg" alt="Qiuting Mo" class="avatar-image">
+                        </div>
+                    </div>
+                    <h3 class="member-name" data-i18n="member3-name">莫秋婷</h3>
+                    <p class="member-role" data-i18n="member3-role">Software Engineer</p>
+                    <p class="member-description" data-i18n="member3-desc">Focus on the development of robot control system, dedicated to improving user interaction experience.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <img src="assets/xiaoting.jpg" alt="Xiaoting Ma" class="avatar-image">
+                        </div>
+                    </div>
+                    <h3 class="member-name" data-i18n="member4-name">马晓婷</h3>
+                    <p class="member-role" data-i18n="member4-role">Product Design, Structural Design</p>
+                    <p class="member-description" data-i18n="member4-desc">Responsible for product design and structural design, ensuring the product meets market demand.</p>
+                </div>
+            </div>
+            
+            <div class="team-footer">
+                <div class="team-credits">
+                    <p class="credits-text" data-i18n="credits-text">Project Advisor: Prof. Chen</p>
+                </div>
+                <div class="team-institution">
+                    <div class="institution-logo">
+                        <div class="logo-symbol">ROBOT</div>
+                    </div>
+                    <div class="institution-text">
+                        <div class="institution-name" data-i18n="institution-name">Spirit Robot Lab</div>
+                        <div class="institution-desc" data-i18n="institution-desc">Advanced Robotics Development Center</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#about" data-i18n="about-us">About Us</a>
+                <a href="#support" data-i18n="tech-support">Technical Support</a>
+                <a href="#privacy" data-i18n="privacy-policy">Privacy Policy</a>
+                <a href="#terms" data-i18n="terms-service">Terms of Service</a>
+                <a href="#contact" data-i18n="contact-us">Contact Us</a>
+            </div>
+            <div class="copyright" data-i18n="copyright">
+                © 2025 Spirit Robot. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
